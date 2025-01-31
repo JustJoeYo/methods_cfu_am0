@@ -37,9 +37,12 @@
 # In this example, the return value is true, because "Jeff" does start with "J".
 # The puts command prints the return value of the start_with? method (true) to the console.
 first_name = "Jeff"
+last_name = "smith"
+middle_name = "Andrew"
+
 puts first_name.start_with?("J")
-
-
+puts last_name.capitalize
+puts middle_name.reverse
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
@@ -47,10 +50,21 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+age = 22
+height = 5 # Should be a double (decimal value aka float in this language but it gotta be a integer)
 
+puts age.odd? # This will return false because 22 is an even number.
+puts height.next # This will return 6 because the next number after 5 is 6.
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
+
+users = ["Jeff", "Andrew", "Smith"] # i am lazy with names lol
+ages = [24, 23, 27]
+
+puts users.length # This will return 3 because there are 3 elements in the array (0, 1, & 2).
+puts ages.sort # This will return [23, 24, 27] due to the assortment of the numbers in the array.
+
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
